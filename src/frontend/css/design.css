@@ -42,6 +42,8 @@ h2{
     color: blueviolet;
     font-size: xx-large;
     font-weight: bold;
+    font-family: sans-serif;
+    font-style: italic;
 }
 p{
     color:black;
@@ -77,7 +79,7 @@ button{
     margin: 10px;
     margin-left: 100px;
     display: flex;
-    justify-content: center; /* وسط‌چین افقی */
+    justify-content: center;
     align-items: center;
     background-color: rgba(102, 51, 153);
     color: white;
@@ -98,4 +100,9 @@ span{
 .error{
     color: red;
     margin-top: 20px;
+}
+.message {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
 }
