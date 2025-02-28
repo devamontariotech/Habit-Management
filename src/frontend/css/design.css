@@ -106,6 +106,7 @@ span{
     margin-top: 10px;
     text-align: center;
 }
+<<<<<<< HEAD
 .navbar{
     background-color: white;
     padding: 20px ;
@@ -158,4 +159,8 @@ span{
     padding: 5px;
    
     
+=======
+.register-button{
+    color: aqua;
+>>>>>>> 13b80ac (Change!)
 }
