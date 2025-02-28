@@ -106,61 +106,6 @@ span{
     margin-top: 10px;
     text-align: center;
 }
-<<<<<<< HEAD
-.navbar{
-    background-color: white;
-    padding: 20px ;
-    width: 100%;
-    margin-bottom: 670px;
-    
-}
-.navbar-logo{
-    font-size:23px;
-    color:blueviolet;
-    padding-right: 350px;
-    margin-top: 0px;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-style: italic;
-}
-.nav-menu{
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.navbar-item{
-    color: blueviolet;
-    margin-right: 40px;
-    margin-top: 7px;
-    font-size: 18px;
-}
-.navbar-link{
-   
-    text-decoration: double;
-}
-.navbar-login{
-    margin-right:30px;
-    margin-left: 350px;
-    
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: blueviolet;
-    padding: 5px;
-}
-.navbar-dashboard{
-    margin-right: 30px;
-  
-    font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: blueviolet;
-    padding: 5px;
-   
-    
-=======
 .register-button{
     color: aqua;
->>>>>>> 13b80ac (Change!)
 }
