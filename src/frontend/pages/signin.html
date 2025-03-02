@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>login</title>
-            <link rel="stylesheet" href="/css/design.css">
-           <script src="src/frontend/js/jquery-3.7.1.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+        <link rel="stylesheet" href="/css/design.css">
+        <script src="src/frontend/js/jquery-3.7.1.min.js"></script>
     </head>
     <body class="signin-body">
         <div class="login-container">
-       
           <div class="right-panel">
-            <h2>Habit management</h2>
-            <form action="#" id="loginform" method="post"></form>
-                
+            <h2>Login</h2>
+            <form action="#" id="loginform" method="post">
                 <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" id="username" placeholder="Email or username" required>
+                    <input type="text" id="email" placeholder="Enter your email" required>
                 </div>
-                
                 <div class="input-group">
-                    <i class="fas fa-lock"></i>
-                    
-                    <input type="password" id="password" placeholder="Password" required>
-                    <button type="submit">Login</button>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Sign In</button>
                     <div id="error-message" class="error"></div>
-                    <p>don't have an acoount?
-                        <span id="toggle">Sign up</span>
+                </div>
+                <div class="input-group horizontal-divider">
+                    <div class="horizontal-line"></div>
+                    <div class="or-text">OR</div>
+                    <div class="horizontal-line"></div>
+                </div>
+                <div class="input-group">
+                    <p>don't have an Account?
+                        <span id="toggle"><a href="register.html">Sign up</a></span>
                     </p>
-                  
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-  
+    </div>
 </body>
    
 </html>

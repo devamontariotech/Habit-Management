@@ -23,7 +23,7 @@ app.get("/", (req,res) => {
   const pageName = req.params.pageName;
   const pagePath = path.resolve(appPath,"${pageName}.html");
 
-  console.log("Found Path!")
+  // console.log("Found Path!")
   res.redirect("frontend/pages/homepage.html");
   // res.status(200).sendFile(pagePath, (error) => {
   //   if(error){
