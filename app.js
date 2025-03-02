@@ -18,19 +18,19 @@ const staticPath = process.env.STATIC_PATH ? path.resolve(process.env.STATIC_PAT
 console.log("App Path : ",appPath);
 console.log("Static Path : ",staticPath);
 app.use(express.static(appPath));
-app.use(express.static(staticPath));
-app.get("/frontend/pages/:pageName", (req,res) => {
+app.use('/css',express.static(staticPath));
+app.get("/", (req,res) => {
   const pageName = req.params.pageName;
   const pagePath = path.resolve(appPath,"${pageName}.html");
 
   console.log("Found Path!")
-  
-  res.status(200).sendFile(pagePath, (error) => {
-    if(error){
-      console.error(`Error reading or sending ${pageName}.html:`, error);
-      res.status(404).send(`Page ${pageName} not found.`);
-    }
-  });
+  res.redirect("frontend/pages/homepage.html");
+  // res.status(200).sendFile(pagePath, (error) => {
+  //   if(error){
+  //     console.error(`Error reading or sending ${pageName}.html:`, error);
+  //     res.status(404).send(`Page ${pageName} not found.`);
+  //   }
+  // });
 });
 
 app.listen(3000, async () => {
