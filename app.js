@@ -35,7 +35,7 @@ app.get("/", (req,res) => {
 
 app.listen(3000, async () => {
   console.log('Running on http://localhost:3000')
-  await open('http://localhost:3000',{app:{name:"/usr/bin/google-chrome"}});
+  await open('http://localhost:3000',{app:{name:"/usr/bin/firefox-esr"}});
 });
 
 app.post("/shutdown",async (req,res) => {

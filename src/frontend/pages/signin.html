@@ -17,13 +17,15 @@
             <h2>Login</h2>
             <form action="#" id="loginform" method="post">
                 <div class="input-group">
-                    <input type="text" id="email" placeholder="Enter your email" required>
+                    <label for="email">Enter your Email:</label>
+                    <input type="text" id="email" placeholder="E-mail" required>
                 </div>
                 <div class="input-group">
-                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <label for="password">Enter your Password:</label>
+                    <input type="password" id="password" placeholder="Password" required>
                 </div>
                 <div class="input-group">
-                    <button type="submit">Sign In</button>
+                    <button type="submit" onclick="">Sign In</button>
                     <div id="error-message" class="error"></div>
                 </div>
                 <div class="input-group horizontal-divider">
@@ -39,6 +41,7 @@
             </form>
         </div>
     </div>
+    <script src="src/frontend/js/jquery-3.7.1.min.js"></script>
 </body>
    
 </html>

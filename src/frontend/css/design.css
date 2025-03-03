@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 .home-body{
-    outline: 5px solid brown;
+    outline: 5px solid orange;
     display: flex;
-    margin-top: 10px;
+    margin: 10px 10px 10px 10px;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -18,7 +18,6 @@
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-
 }
 .signin-body{
     outline: 5px solid orange;
@@ -83,6 +82,8 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 100vh;
 }
 
 /*.left-panel{
@@ -124,9 +125,8 @@ p{
     padding: 10px 40% 10px 20%;
 }
 .input-group i{
-    position: absolute;
-    left: 10px;
-    top: 50%;
+    position: relative;
+    margin: 5px 5px 5px 5px;
     transform: translateY(-50%);
     color: #999;
 }
@@ -157,7 +157,6 @@ button:hover{
     background-color: blueviolet;
 }
 .navigation-buttons{
-    display: inline-flex;
     justify-content: center;
     white-space: nowrap;
     background-color: rgb(99, 71, 126);
@@ -165,10 +164,11 @@ button:hover{
     border-width: 1px;
     cursor:pointer;
     border-radius: 50px;
-    margin: 10%;
+    margin: 5% 5% 5% 5%;
     text-align: center;
     padding: 2%;
     font-size: 15px;
+    display: inline-block;
 }
 .navigation-buttons:hover{
     background-color: #ddd;
@@ -217,10 +217,11 @@ span{
     gap: 10px;
 }
 .navbar-right{
-    margin-right: 20px;
+    margin: 10px 10px 10px 10px;
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    padding: auto;
 }
 .navbar a{
     float: left;
@@ -234,7 +235,6 @@ span{
     background-color: #ddd;
     color: purple;
 }
-
 .navbar a.active {
     background-color: #04AA6D;
     color: greenyellow;
