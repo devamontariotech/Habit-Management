@@ -38,9 +38,7 @@ router.post('/register', async (req, res) => {
         const verificationToken = crypto.randomBytes(20).toString('hex');
         newUser.verificationToken = verificationToken;
 
-        await newUser.save(); // Save to database
-
-        // 4. Send verification email
+        await newUser.save();
         const verificationLink = `http://localhost:3000/verify-email?token=${verificationToken}`; // Create full URL
 
         const mailOptions = {
