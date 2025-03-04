@@ -7,14 +7,16 @@ const schema = new mongoose.schema({
     },
     email:{
         type:String,
+        required:true,
         unique:true
     },
     password:{
         type:String,
-
+        required:true
     },
     birthdate:{
-        type:Date
+        type:Date,
+        required:true
     },
     city:{
         type:String,
@@ -25,5 +27,15 @@ const schema = new mongoose.schema({
     },
     country:{
         type:String,
+    },
+    isVerified:{
+        type:Boolean,
+        default:false
+    },
+    verificationToken:{
+        type:String,
+        default:null
     }
 });
+
+module.exports = mongoose.model('User',userSchema)

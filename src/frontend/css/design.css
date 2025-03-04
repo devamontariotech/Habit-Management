@@ -10,8 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: chocolate;
-    background: linear-gradient(to right,#6c007a, #ff00fb);
+    background-image: url('src/frontend/assets/homepage_background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -210,6 +209,7 @@ span{
     background: linear-gradient(135deg, #007bff, #00d4ff);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    z-index: 1000;
 }
 .navbar-left{
     margin-right: 20px;
@@ -240,8 +240,9 @@ span{
     background-color: #04AA6D;
     color: greenyellow;
 }
-.register-button{
-    color: aqua;
+.navbar-image{
+    margin: 2% 4% 4% 4%;
+    padding: 1% 1% 1% 1%;
 }
 .horizontal-divider{
     display: flex;

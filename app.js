@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 import mongoose from 'mongoose';
+import cors from 'cors';
 dotenv.config();
 const router = express.Router();
 fs.promises;
@@ -19,6 +20,10 @@ console.log("App Path : ",appPath);
 console.log("Static Path : ",staticPath);
 app.use(express.static(appPath));
 app.use('/css',express.static(staticPath));
+app.use(cors());
+app.use(express.static(__dirname,{
+  extensions:["webp","jpg","svg"],
+}));
 app.get("/", (req,res) => {
   const pageName = req.params.pageName;
   const pagePath = path.resolve(appPath,"${pageName}.html");
@@ -31,6 +36,9 @@ app.get("/", (req,res) => {
   //     res.status(404).send(`Page ${pageName} not found.`);
   //   }
   // });
+});
+app.get("*", (req, res) => {
+  return res.sendStatus(404);
 });
 
 app.listen(3000, async () => {
